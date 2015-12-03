@@ -1,0 +1,17 @@
+<%- include ../header %>
+<form method="post" action="/tasks">
+    <fieldSet>
+        <legend>Add a task</legend>
+        <div class="clearfix">
+            <label>Task</label>
+            <div class="input">
+                <input name="task[task]" class="xlarge"/>
+            </div>
+        </div>
+        <div class="actions">
+            <input type="submit" value="Save" class="btn primary">
+            <buttom type="reset" class="btn">Cancel</buttom>
+        </div>
+    </fieldSet>
+</form>
+<%- include ../footer %>

@@ -1,0 +1,18 @@
+<%- include ../header %>
+<h1>Edit task view</h1>
+<form method="post" action="/tasks/<%= task.id %>?_method=put">
+    <fieldSet>
+        <legend>Editing task</legend>
+        <div class="clearfix">
+            <label>Task</label>
+            <div class="input">
+                <input name="task[task]" class="xlarge" value="<%= task.task %>">
+            </div>
+        </div>
+        <div class="actions">
+            <input type="submit" value="Save" class="btn primary"/>
+            <button type="reset" class="btn">Cancel</button>
+        </div>
+    </fieldSet>
+</form>
+<%- include ../footer %>

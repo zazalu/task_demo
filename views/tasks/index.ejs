@@ -1,0 +1,32 @@
+<%- include ../header %>
+<h1>Your Tasks</h1>
+<% if (docs.length) { %>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th></th>
+            <% for (task of docs) { %>
+            <tr>
+                <td><%= task.task %></td>
+                <td>
+                    <a href="/tasks/<%= task.id %>/edit" class="btn">Edit</a>
+                </td>
+                <td>
+                    <form action="/tasks/<%= task.id%>?_method=delete" method="post">
+                        <button class="btn" type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            <% } %>
+        </tr>
+    </table>
+<% } else { %>
+<p>You don't have any tasks!</p>
+<% } %>
+<% if (message) { %>
+<div data-alert="alert" class="alert-message success">
+    <p><%= message %></p>
+</div>
+<% } %>
+<p><a href="/tasks/new" class="btn primary"> Add a Task</a></p>
+<%- include ../footer %>

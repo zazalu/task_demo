@@ -1,0 +1,22 @@
+{
+  "name": "task_demo",
+  "version": "0.0.1",
+  "description": "a task demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor app.js"
+  },
+  "author": "meritozh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.0",
+    "express-session": "^1.12.1",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.2.9",
+    "express": "^4.13.3",
+    "ejs": "^2.3.4"
+  }
+}
