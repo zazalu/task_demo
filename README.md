@@ -8,3 +8,7 @@ My first Express and Node.js app. Just a demo...
 - `mongod --dbpath ./todo_development/`
 - `npm install supervisor && npm install && npm start`
 - `open your browser in http://localhost:3000`
+
+
+## LICENSE
+[MIT](https://github.com/meritozh/task_demo/blob/master/LICENSE)
