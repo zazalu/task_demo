@@ -7,7 +7,7 @@ My first Express and Node.js app. Just a demo...
 - `mkdir todo_development`
 - `mongod --dbpath ./todo_development/`
 - `npm install supervisor && npm install && npm start`
-- `open your browser in http://localhost:3000`
+- `open your browser in http://localhost:3000/tasks`
 
 
 ## LICENSE
